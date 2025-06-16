@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "creator": "cds-dk 9.0.5"
+ },
+ "$version": "2.0",
+ "definitions": {
+  "ZTEST_PI_SD_SRV": {
+   "kind": "service",
+   "@cds.external": true,
+   "@m.IsDefaultEntityContainer": "true",
+   "@sap.supported.formats": "atom json xlsx"
+  },
+  "ZTEST_PI_SD_SRV.SHEADERSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.pageable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "Vbeln": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "@sap.unicode": "false",
+     "@sap.label": "Sales Document",
+     "notNull": true
+    },
+    "Erdat": {
+     "type": "cds.Timestamp",
+     "@odata.Type": "Edm.DateTime",
+     "@odata.Precision": 7,
+     "@sap.unicode": "false",
+     "@sap.label": "Created On"
+    },
+    "Erzet": {
+     "type": "cds.Time",
+     "@sap.unicode": "false",
+     "@sap.label": "Time"
+    },
+    "Ernam": {
+     "type": "cds.String",
+     "length": 12,
+     "@sap.unicode": "false",
+     "@sap.label": "Created By"
+    },
+    "Angdt": {
+     "type": "cds.Timestamp",
+     "@odata.Type": "Edm.DateTime",
+     "@odata.Precision": 7,
+     "@sap.unicode": "false",
+     "@sap.label": "Valid From"
+    },
+    "Bnddt": {
+     "type": "cds.Timestamp",
+     "@odata.Type": "Edm.DateTime",
+     "@odata.Precision": 7,
+     "@sap.unicode": "false",
+     "@sap.label": "Valid To"
+    },
+    "Audat": {
+     "type": "cds.Timestamp",
+     "@odata.Type": "Edm.DateTime",
+     "@odata.Precision": 7,
+     "@sap.unicode": "false",
+     "@sap.label": "Document Date"
+    }
+   }
+  },
+  "ZTEST_PI_SD_SRV.SDITEMSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.pageable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "Vbeln": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "@sap.unicode": "false",
+     "@sap.label": "Sales Document",
+     "notNull": true
+    },
+    "Posnr": {
+     "key": true,
+     "type": "cds.String",
+     "length": 6,
+     "@sap.unicode": "false",
+     "@sap.label": "Item",
+     "notNull": true
+    },
+    "Matnr": {
+     "type": "cds.String",
+     "length": 40,
+     "@sap.unicode": "false",
+     "@sap.label": "Material"
+    },
+    "Matwa": {
+     "type": "cds.String",
+     "length": 40,
+     "@sap.unicode": "false",
+     "@sap.label": "MaterialEntered"
+    },
+    "Pmatn": {
+     "type": "cds.String",
+     "length": 40,
+     "@sap.unicode": "false",
+     "@sap.label": "Pr. Ref. Matl"
+    },
+    "Charg": {
+     "type": "cds.String",
+     "length": 10,
+     "@sap.unicode": "false",
+     "@sap.label": "Batch"
+    },
+    "Matkl": {
+     "type": "cds.String",
+     "length": 9,
+     "@sap.unicode": "false",
+     "@sap.label": "Material Group"
+    },
+    "Arktx": {
+     "type": "cds.String",
+     "length": 40,
+     "@sap.unicode": "false",
+     "@sap.label": "Item Descr."
+    }
+   }
+  }
+ }
+}
